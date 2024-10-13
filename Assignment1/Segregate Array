@@ -1,0 +1,48 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+void segregateArray(const vector<int>& arr) {
+    vector<int> even;
+    vector<int> odd;
+
+    // Segregate even and odd numbers
+    for (int num : arr) {
+        if (num % 2 == 0) {
+            even.push_back(num);
+        } else {
+            odd.push_back(num);
+        }
+    }
+
+    // Combine even and odd arrays
+    vector<int> result = even; // Start with even numbers
+    result.insert(result.end(), odd.begin(), odd.end()); // Append odd numbers
+
+    // Print the result
+    cout << "Output: [";
+    for (size_t i = 0; i < result.size(); i++) {
+        cout << result[i];
+        if (i != result.size() - 1) {
+            cout << ", ";
+        }
+    }
+    cout << "]" << endl;
+}
+
+int main() {
+    vector<int> arr = {12, 34, 45, 9, 8, 90, 3};
+    
+    cout << "Input: [";
+    for (size_t i = 0; i < arr.size(); i++) {
+        cout << arr[i];
+        if (i != arr.size() - 1) {
+            cout << ", ";
+        }
+    }
+    cout << "]" << endl;
+
+    segregateArray(arr);
+
+    return 0;
+}
