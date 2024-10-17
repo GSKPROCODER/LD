@@ -16,7 +16,7 @@ int main() {
         cin>>arr[i];
     }
 
-    cout<<"Enter position to insert element: ";
+    cout<<"Enter position to insert element : ";
     cin>>pos;
 
     cout<<"Enter value of element: ";
