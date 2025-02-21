@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/GSK/Documents/GitHub/LD",
-      "program": "c:/Users/GSK/Documents/GitHub/LD/build/Debug/outDebug",
+      "cwd": "c:/Users/GSK/Documents/GitHub/LD/LAB",
+      "program": "c:/Users/GSK/Documents/GitHub/LD/LAB/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
